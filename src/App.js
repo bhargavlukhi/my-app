@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import logo from './components/Images/Login_logo.png';
 import './App.css';
+import './LoginForm.js';
+import LoginForm from './LoginForm';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React with Bhargav
-        </a>
-      </header>
+        <div className="left-section">
+        <img src={logo} alt="Left section image" />
+      </div>
+      <div className="right">
+        <LoginForm />
+      </div>
     </div>
   );
 }
 
-export default App;
+export default App; 
