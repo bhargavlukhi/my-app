@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
 .App {
     display: flex;
     align-items: center;
@@ -9,14 +12,14 @@
     color: #037E69;
     font-size: 40px;
     text-align: center;
-    padding: -20px;
+    margin-bottom: -20px;
   }
 
   h4{
     font-weight: 500%;
     color: #707070;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
     font-weight:500;
     font-size: 25px;
 
@@ -38,14 +41,16 @@
   }
   
   .form-group {
-    margin-bottom: 15px;
-    font-size: 20px;
+    margin-bottom: 22px;
+    font-size: 18px;
     color: #037E69;
     text-align: left;
     font-weight: 600%;
-  }
+    font-family: "Inter";
+    font-style: bold;
+    }
+    
 
-  
   label {
     display: block;
     margin-bottom: 5px;
@@ -53,10 +58,18 @@
   
   input[type="email"],
   input[type="password"] {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    background-color: #ccc;
+    opacity: 80%;
+    outline: none;
+  }
+
+  input::placeholder {
+    text-align: left;
+    font-style: bold;
   }
   
   .forgot-password {
@@ -64,6 +77,11 @@
     text-align: center;
     margin-bottom: 15px;
     font-weight: 600%;
+    color: #037E69;
+    font-size: 20px;
+    text-decoration: underline;
+    font-family: "Inter";
+    font-style: bold;
     
   }
   
@@ -74,13 +92,16 @@
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
+    width: 96%;
+    margin-left: -25px;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
     margin-top: 20px;
-    font-size: 26px;
+    font-size: 18px;
     font-weight: 700%;
+    font-family: "Inter";
+    font-style: bold;
   }
   
   button:hover {
