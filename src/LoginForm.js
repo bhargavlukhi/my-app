@@ -9,7 +9,8 @@ function LoginForm() {
   const [password, setPassword] = useState('');
   const [ error, setError ] = useState('');
 
-  const handleLogin = (e) => {
+  const handleLogin = (e) => 
+  {
     //add username and password we can check from db or API
     e.preventDefault();
     if (username === 'admin@gmail.com' && password === 'password') {
