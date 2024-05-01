@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import './LoginForm.css';
 
-//import {useHistory} from 'react-dom'
+/*import {useHistory} from 'react-dom'*/
 
 
 function LoginForm() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [ error, setError ] = useState('');
+  //const history = useHistory();
 
   const handleLogin = (e) => 
   {
@@ -15,7 +16,7 @@ function LoginForm() {
     e.preventDefault();
     if (username === 'admin@gmail.com' && password === 'password') {
       alert('Login successful!');
-     // history.push('/Dashboard')
+      //history.push('/dashboard');
       //want to redirect page
     } else {
       alert("Invalid username and password.")

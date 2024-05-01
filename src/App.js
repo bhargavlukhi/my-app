@@ -2,6 +2,7 @@ import logo from './components/Images/Login_logo.png';
 import './App.css';
 import './LoginForm.js';
 import LoginForm from './LoginForm';
+//import Dashboard from './Dashboard';
 
 
 function App() {
@@ -15,9 +16,16 @@ function App() {
           <LoginForm />
         </div>
       </div>
-      
-  
   );
+
+   /*
+  <Router>
+      <Switch>
+        <Route exact path="/" component={LoginForm} />
+        <Route path="/dashboard" component={Dashboard} />
+      </Switch>
+    </Router>
+  );*/
 }
 
 export default App; 
